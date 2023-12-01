@@ -1,0 +1,5 @@
+{
+  "tasks": {
+    "day1": "deno run --allow-read day1/main.ts"
+  }
+}
