@@ -55,17 +55,17 @@ function parseSymbolLine(line: string) {
 
 export function part2(input: string[]): number {
   let i = 0;
-  let nums = [];
+  const nums = [];
   for (const line of input) {
     const parsedLine = parseSymbolLine(line);
 
-    let parsedPrevLine = parseInputLine(input[i - 1] ?? "");
-    let parsedCurrentLine = parseInputLine(input[i]);
-    let parsedNextLine = parseInputLine(input[i + 1] ?? "");
+    const parsedPrevLine = parseInputLine(input[i - 1] ?? "");
+    const parsedCurrentLine = parseInputLine(input[i]);
+    const parsedNextLine = parseInputLine(input[i + 1] ?? "");
 
     for (const symbol of parsedLine) {
       let intersected = false;
-      let inters = [];
+      const inters = [];
       for (const prev of parsedPrevLine) {
         if (between(symbol.index, prev.startsAt - 1, prev.endsAt)) {
           intersected = true;

@@ -1,7 +1,7 @@
 export function part2(input: string[]): number {
   let sum = 0;
 
-  for (const [index, game] of input.entries()) {
+  for (const game of input) {
 
     const grabs = game.split(": ")[1].split('; ');
     const bag = { red: 0, green: 0, blue: 0 };

@@ -4,6 +4,8 @@ import { part2 } from "./part2.ts";
 
 const input = getInput(2);
 
+console.log("Day 2");
+
 const result1 = test(1, () => part1(input));
 console.log(result1);
 

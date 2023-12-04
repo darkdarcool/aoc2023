@@ -56,7 +56,7 @@ function parseSymbolLine(line: string) {
 
 export function part1(input: string[]): number {
   let i = 0;
-  let nums = []
+  const nums = []
   for (const line of input) {
     const parsedLine = parseInputLine(line);
     // get the NEXT line

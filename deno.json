@@ -1,7 +1,9 @@
 {
   "tasks": {
+    "all": "deno run --allow-read day1/main.ts && deno run --allow-read day2/main.ts && deno run --allow-read day3/main.ts && deno run --allow-read day4/main.ts",
     "day1": "deno run --allow-read day1/main.ts",
     "day2": "deno run --allow-read day2/main.ts",
-    "day3": "deno run --allow-read day3/main.ts"
+    "day3": "deno run --allow-read day3/main.ts",
+    "day4": "deno run --allow-read day4/main.ts"
   }
 }

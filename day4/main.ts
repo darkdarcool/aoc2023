@@ -2,9 +2,9 @@ import { getInput, test } from "../shared/utils.ts";
 import { part1 } from "./part1.ts";
 import { part2 } from "./part2.ts";
 
-const input = getInput(3);
+const input = getInput(4);
 
-console.log("Day 3");
+console.log("Day 4");
 
 const result1 = test(1, () => part1(input));
 console.log(result1);
